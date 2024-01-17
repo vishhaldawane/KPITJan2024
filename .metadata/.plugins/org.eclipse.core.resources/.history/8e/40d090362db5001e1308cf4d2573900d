@@ -1,0 +1,18 @@
+
+public class MethodTest {
+	public static void main(String[] args) {
+		
+		BankAccount bankAccObjRef1 = new BankAccount();
+		bankAccObjRef1.withdraw();
+	}
+}
+
+class BankAccount
+{
+	//1. function without argument
+	//   and without return value
+	
+	void withdraw() {
+		System.out.println("1. withdrawing...");
+	}
+}

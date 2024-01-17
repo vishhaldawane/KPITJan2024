@@ -1,0 +1,70 @@
+
+
+		E	|	B		
+		-----------------
+		S	|	I
+
+
+			who
+			|Employee|Developer
+			|Tester|Deployers|DBA...
+		---------------------
+		|		|
+		where		when
+		|Pune		|2024 Jan	
+	----------------------------------
+	|		|		|
+	why		what		how
+	|		|		|	
+	Java		InFORMation	Implementation
+					.......
+					1,2,3,4,5
+	
+
+
+		Java Technology
+			|
+	-----------------------------------
+	|		|		|
+	JSE		JEE		JME
+	Standard	Enterprise	Micro
+	|		|		|
+	Core		---------		
+Desktop application	|	|
+Language Fundas		WEB	EJB	
+OOPS			http	non-http
+Packages		|		|
+Exception handling	Servlet	------------------
+Multithreading		JSP	|	|	|
+Generics			Session Entity	Message
+Collections			|	   |	   |	
+File IO		    Stateless  Stateful  BMP CMP SMS Mail
+JJDBC		bookmyshow	
+|
+Advanced Java
+|
+Networking
+RMI
+
+
+
+	Four Types of Functions
+
+
+1. Function without argument and function without return value
+2. Function with argument but without return value
+3. Function with argument and with return value
+4. Function without argument but with return value
+
+
+
+
+
+
+
+
+
+
+
+
+

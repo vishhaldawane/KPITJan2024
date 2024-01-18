@@ -144,7 +144,43 @@ Farmer --> What is an Atm?"
 HeartSurgeon	NeuroSurgeon
 
 	b. function overloading
+		ability of a function to be redefined with same name
+		but they all can be differentiated on the following terms
+			i. number of paremeters/arguments
+			ii. type of parameters
+			iii. sequence of type of parameters
+
 	c. function overriding
+		- let child class redefine a function that is present
+		in its super class
+		- 
+		class BankAccount {
+			float balance;
+			void withdraw(float amt) { //OVERRIDDEN
+				balance -= amt;
+			}
+		}
+
+		class SavingsAccount extends BankAccount {
+			void withdraw(float amt) { // OVERRIDING
+				if( amt > (balance-5000) ) {
+					sop("maintain min bal as 5000");
+				}
+				else 
+					super.withdraw(amt);
+			}
+		}
+		class FixedDepositAccount extends SavingsAccount {
+			float maturityDate;
+			void withdraw(float amt) {
+				if(maturityDate < currentDate) {
+					sop("account not matured..cannot withdraw");
+				}
+				else
+					super.withdraw(amt);
+			}
+		}
+
 	d. operator overloading
 
 
@@ -227,11 +263,39 @@ d.diagnose(); // Doctor::diagnose(); compile-time binding
 	  from other existing entities
 
 
+		BankAccount baAcc1 = new BankAccount();
+		BankAccount baAcc2 = new BankAccount();
+		BankAccount baAcc3 = new BankAccount();
+		BankAccount baAcc4 = new BankAccount();
+		BankAccount baAcc5 = new BankAccount();
+		BankAccount baAcc6 = new BankAccount();
 
 
 
+	STACK				HEAP
+	|				|
+					FIELD AREA
+			accountNumber accountHolder accountBalance
+			------------------------------------------	
+			|	     |   	   |		 |
+			------------------------------------------	
+			10020
+	+-------------->
+	|				METHOD AREA
+	10020				BankAccount() { }
+	baAcc1				withdraw(amt) { }
+					deposit(amt) { }
+					showBankAccount(){}
 
-
+			accountNumber accountHolder accountBalance
+			------------------------------------------	
+			|	     |   	   |		 |
+			------------------------------------------	
+			10070
+	+-------------->
+	|				
+	10070				
+	baAcc2c2c				
 
 
 

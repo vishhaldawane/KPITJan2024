@@ -55,14 +55,7 @@ public class PolymorphismTest {
 	heartSurgeonRef.diagnose();
 	heartSurgeonRef.doSurgery();
 	heartSurgeonRef.checkECG();*/
-		
-		
-		
-		
-		
-		
-		
-		
+
 	//	doctorRef.diagnose();
 	//	doctorRef.doSurgery();
 		

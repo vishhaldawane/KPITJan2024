@@ -1,0 +1,28 @@
+
+public class CtorChainTest {
+	public static void main(String[] args) {
+		//GrandFather gf = new GrandFather();
+		//System.out.println("----------------");
+		Father f = new Father();
+		//System.out.println("----------------");
+		//Child c = new Child() ;
+		
+	}
+}
+class GrandFather {
+	GrandFather() {
+		System.out.println("GrandFather()....");
+	}
+}
+class Father extends GrandFather {
+	Father() {
+		System.out.println("Father()....");
+	}
+	
+}
+class Child extends Father {
+	Child() {
+		System.out.println("Child()....");
+	}
+	
+}

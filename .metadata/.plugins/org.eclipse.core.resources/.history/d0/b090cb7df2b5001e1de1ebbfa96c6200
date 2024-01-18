@@ -1,0 +1,60 @@
+
+public class BankTest {
+
+	public static void main(String[] args) {
+		//Class	  refToObj allocator   Ctor
+		//  |		  |		 |			 |
+			BankAccount baAcc1 = new BankAccount();
+			BankAccount baAcc2 = new BankAccount();
+			BankAccount baAcc3 = new BankAccount();
+			BankAccount baAcc4 = new BankAccount();
+			BankAccount baAcc5 = new BankAccount();
+			BankAccount baAcc6 = new BankAccount();
+
+			baAcc1.showBankAccount();
+			baAcc2.showBankAccount();
+			baAcc3.showBankAccount();
+			baAcc4.showBankAccount();
+			baAcc5.showBankAccount();
+			baAcc6.showBankAccount();
+			
+	}
+
+}
+class BankAccount {
+	//DATA MEMBERS / fields
+	
+	int accountNumber;
+	String accountHolder;
+	double accountBalance;
+	
+	//MEMBER FUNCTION / methods
+	
+	//there is inbuilt ctor/implicit ctor/default ctor
+	//IT DOES NOTHING
+	BankAccount() { //explicit no-arg ctor
+		System.out.println("BankAccount ctor...");
+	}
+	//either implicit or explicit but not both
+	void withdraw(float amt) {
+		System.out.println("withdrawing..."+amt);
+		accountBalance -= amt;
+	}
+	void deposit(float amt) {
+		System.out.println("depositing..."+amt);
+		accountBalance += amt;
+	}
+	void showBankAccount() {
+		System.out.println("ACNO   : "+accountNumber);
+		System.out.println("ACNAME : "+accountHolder);
+		System.out.println("ACBAL  : "+accountBalance);
+		System.out.println("-------------------");
+	}
+}
+class SavingsAccount extends BankAccount {
+	
+}
+class FixedDepositAccount extends SavingsAccount {
+	
+}
+

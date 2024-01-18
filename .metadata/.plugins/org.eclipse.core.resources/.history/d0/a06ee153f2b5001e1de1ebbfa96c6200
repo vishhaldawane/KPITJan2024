@@ -1,0 +1,40 @@
+
+public class BankTest {
+
+	public static void main(String[] args) {
+		//Class	  refToObj allocator   Ctor
+		//  |		  |		 |			 |
+		BankAccount baAcc1 = new BankAccount();
+		BankAccount baAcc2 = new BankAccount();
+		BankAccount baAcc3 = new BankAccount();
+		BankAccount baAcc4 = new BankAccount();
+		BankAccount baAcc5 = new BankAccount();
+		BankAccount baAcc6 = new BankAccount();
+
+	}
+
+}
+class BankAccount {
+	//DATA MEMBERS / fields
+	
+	int accountNumber;
+	String accountHolder;
+	double accountBalance;
+	
+	//MEMBER FUNCTION / methods
+	
+	//there is inbuilt ctor/implicit ctor/default ctor
+	//IT DOES NOTHING
+	BankAccount() { //explicit no-arg ctor
+		System.out.println("BankAccount ctor...");
+	}
+	//either implicit or explicit but not both
+	
+}
+class SavingsAccount extends BankAccount {
+	
+}
+class FixedDepositAccount extends SavingsAccount {
+	
+}
+

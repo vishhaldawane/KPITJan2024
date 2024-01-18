@@ -2,7 +2,7 @@
 public class MethodTest {
 	public static void main(String[] args) {
 		
-		BankAccount bankAccObjRef1 = new BankAccount();
+		BankAccount1 bankAccObjRef1 = new BankAccount1();
 		bankAccObjRef1.withdraw();
 		bankAccObjRef1.withdraw(5000.0f);
 		double remBalance = bankAccObjRef1.withdraw(4000.0);
@@ -15,7 +15,7 @@ public class MethodTest {
 	}
 }
 
-class BankAccount {
+class BankAccount1 {
 	double currentBalance=50000;
 	//1. function without argument and without return value
 	void withdraw() {

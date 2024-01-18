@@ -4,7 +4,7 @@ public class BankTest {
 	public static void main(String[] args) {
 		//Class	  refToObj allocator   Ctor
 		//  |		  |		 |			 |
-		/*	BankAccount baAcc1 = new BankAccount(101,"Prakhar",50000);
+			BankAccount baAcc1 = new BankAccount(101,"Prakhar",50000);
 			BankAccount baAcc2 = new BankAccount(102,"Chahat",55000);
 			BankAccount baAcc3 = new BankAccount(103,"Harsh",65000);
 			BankAccount baAcc4 = new BankAccount(104,"Shikha",75000);
@@ -31,11 +31,7 @@ public class BankTest {
 			baAcc4.showBankAccount();
 			baAcc5.showBankAccount();
 			baAcc6.showBankAccount();
-			*/
-		
-		SavingsAccount savAccObj = new SavingsAccount(555,"Jack",60000,7.5f);
-		savAccObj.showBankAccount();
-		savAccObj.calculateSimpleInterest();
+			
 	}
 
 }
@@ -79,26 +75,11 @@ class BankAccount { //extends Object
 //is undefined for default constructor. 
 //Must define an explicit constructor
 class SavingsAccount extends BankAccount {
-	
-	float rateOfInterest;
-	
-	SavingsAccount(int a, String b, double c, float d) {
-		super(a,b,c); //for the ctor
-		rateOfInterest=d;
-		System.out.println("SavingsAccount ctor...");
-
-	}
-	void calculateSimpleInterest() {
-		//pnr/100
-		double si = (accountBalance * 1 * rateOfInterest)/100;
-		System.out.println("SI : "+si);
-	}
-	void showBankAccount() {
-		super.showBankAccount(); //for method
-		System.out.println("RATE : "+rateOfInterest);
+	SavingsAccount() {
+		super(1233,"sample",59595);
 	}
 }
-/*class FixedDepositAccount extends SavingsAccount {
+class FixedDepositAccount extends SavingsAccount {
 	
-}*/
+}
 

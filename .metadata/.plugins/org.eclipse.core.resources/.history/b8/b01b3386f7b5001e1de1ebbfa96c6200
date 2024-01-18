@@ -35,7 +35,6 @@ public class BankTest {
 		
 		SavingsAccount savAccObj = new SavingsAccount(555,"Jack",60000,7.5f);
 		savAccObj.showBankAccount();
-		savAccObj.calculateSimpleInterest();
 	}
 
 }
@@ -87,11 +86,6 @@ class SavingsAccount extends BankAccount {
 		rateOfInterest=d;
 		System.out.println("SavingsAccount ctor...");
 
-	}
-	void calculateSimpleInterest() {
-		//pnr/100
-		double si = (accountBalance * 1 * rateOfInterest)/100;
-		System.out.println("SI : "+si);
 	}
 	void showBankAccount() {
 		super.showBankAccount(); //for method

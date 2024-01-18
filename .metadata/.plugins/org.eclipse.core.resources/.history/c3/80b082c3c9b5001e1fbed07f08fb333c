@@ -1,0 +1,20 @@
+
+public class PolymorphismTest {
+
+	public static void main(String[] args) {
+		Doctor doctorRef = new Doctor();
+		doctorRef.diagnose();
+
+	}
+
+}
+class Doctor {
+	void diagnose() {
+		System.out.println("Doctor:diagnose()");
+	}
+}
+class Surgeon extends Doctor {
+	void diagnose() {
+		System.out.println("Surgeon:diagnose()");
+	}
+}

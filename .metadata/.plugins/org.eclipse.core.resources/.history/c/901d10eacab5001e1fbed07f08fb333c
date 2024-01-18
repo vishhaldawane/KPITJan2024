@@ -1,0 +1,42 @@
+
+public class PolymorphismTest {
+
+	public static void main(String[] args) {
+		Doctor doctorRef = new Doctor();
+		Surgeon surgenRef = new Surgeon();
+		HeartSurgeon heartSurgeonRef = new HeartSurgeon();
+		
+		
+		MedicalCamp.medicalCheckup(doctorRef);
+	}
+
+}
+
+class MedicalCamp
+{
+	static void medicalCheckup(Doctor doctRef)
+	{
+		System.out.println("Doing medical Checkup.."+doctRef.getClass());
+		doctRef.diagnose();
+		
+	}
+	
+}
+
+
+
+class Doctor {
+	void diagnose() {
+		System.out.println("Doctor:diagnose()");
+	}
+}
+class Surgeon extends Doctor {
+	void diagnose() {
+		System.out.println("Surgeon:diagnose()");
+	}
+}
+class HeartSurgeon extends Surgeon {
+	void diagnose() {
+		System.out.println("HeartSurgeon:diagnose()");
+	}
+}

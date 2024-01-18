@@ -58,6 +58,193 @@ RMI
 
 
 
+Features of Enterprise application
+
+1. RC
+2. HA
+3. MT
+4. POR
+5. COR
+6. TM
+7. SM
+
+
+
+Frequency				Frequency
+|					|
+invisible				visible
+|					|
+Unmanifest				Manifest
+Thought  + Feelings(Emotions)		Action + Result
+
+			TEAR
+
+
+OOPS Concepts
+--------------
+1. Abstraction
+		
+	- It is the "what is?" part of an object
+	- hiding the complexity of an object
+
+Farmer --> What is an Atm?"
+
+		- dispense cash
+		
+	a. data abstraction
+		private long totalNumberOfHits;
+
+	b. procedural abstraction
+		private void logTheUser() { }
+		private void dispenseCash() { } 
+	c. class abstraction
+		private class Permission { }
+
+ 
+2. Encapsulation
+
+	- It is the "How is it?" part of an object
+	- writing the complexity of an object
+
+		- how is it dispensed?
+
+
+	class ATM {
+		
+		private long calculateTotalNumberOfHits() {
+			totalNumberOfHits++;
+		}
+		private dispenseCash() {
+			..actual code to deal with the h/w
+		}
+		void withdraw(float amt) {
+			...
+			...
+			dispenseCash(amt);
+			..
+			..
+		}
+	}
+
+
+3. Polymorhism
+
+	- ability of a business entity to have many forms
+	  
+	a. class extension
+
+			Doctor
+			|
+		----------------
+		|
+		Surgeon
+		|isA
+	------------------
+	|isA		|
+HeartSurgeon	NeuroSurgeon
+
+	b. function overloading
+	c. function overriding
+	d. operator overloading
+
+
+	class Doctor
+	{
+		void diagnose() {
+		}
+		void diagnose(int level) {
+		}
+		void diagnose(float time) {
+		}
+		void diagnose(int level, float time) {
+		}
+		void diagnose(float time, int level ) {
+		}
+
+	}
+	class Surgeon extends Doctor {
+		void diagnose() { // same signature as of the
+		}			// super class function
+	}
+	class HeartSurgeon extends Surgeon {
+		void diagnose() {
+		}
+	}
+
+	Doctor d = new Doctor();
+			// C++ Doctor *ptr = new Doctor();
+
+	d.diagnose(); // Doctor::diagnose();
+
+	d.diagnose(5.4f);
+	d.diagnose(8);
+
+	d = new Surgeon();
+
+d.diagnose(); // Doctor::diagnose(); compile-time binding
+
+		//Surgeon::diagnose(); run-time binding
+
+
+		BankAccount
+			|withdraw(float amt);
+	---------------------------------
+	|		|		|
+	SavingsAccount CurrentAccount CreditAccount
+	withdraw(float)	withdraw(float) withdraw(float)
+	  maintain	maintain	maintain
+ 	  min bal	overdraf	creditlimit
+
+
+	BankAccount baAcc;
+
+	baAcc = new SavingsAccount();
+
+	OR
+
+	baAcc = new CurrentAccount();
+		
+	OR
+
+	baAcc = new CreditAccount();
+
+	------------
+
+	baAcc.withdraw(); -- BankAccount::withdraw();
+
+	
+
+
+
+
+
+
+
+
+4. Inheritance
+
+	- ability of a business entity to acquire properties
+	  from other existing entities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

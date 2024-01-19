@@ -33,9 +33,45 @@ public class BankTest {
 			baAcc6.showBankAccount();
 			*/
 		
-		SavingsAccount savAccObj = new SavingsAccount(555,"Jack",60000,7.5f);
-		savAccObj.showBankAccount();
-		savAccObj.calculateSimpleInterest();
+		SavingsAccount.showRateOfInterest();
+		SavingsAccount.setRateOfInterest(6.5f);
+		SavingsAccount.showRateOfInterest();
+		
+		
+		SavingsAccount savAccObj1 = new SavingsAccount(555,"Jack",60000);
+		SavingsAccount savAccObj2 = new SavingsAccount(556,"Jane",70000);
+		SavingsAccount savAccObj3 = new SavingsAccount(557,"Julie",80000);
+		SavingsAccount savAccObj4 = new SavingsAccount(558,"Jaya",90000);
+		SavingsAccount savAccObj5 = new SavingsAccount(559,"Janet",90000);
+
+		savAccObj1.showBankAccount();
+		savAccObj1.calculateSimpleInterest();
+		
+		savAccObj2.showBankAccount();
+		savAccObj2.calculateSimpleInterest();
+		
+		savAccObj3.showBankAccount();
+		savAccObj3.calculateSimpleInterest();
+		
+		SavingsAccount.setRateOfInterest(9.5f);
+		System.out.println("==================");
+		savAccObj4.showBankAccount();
+		savAccObj4.calculateSimpleInterest();
+		
+		
+		savAccObj5.showBankAccount();
+		savAccObj5.calculateSimpleInterest();
+		
+		
+		savAccObj1.showBankAccount();
+		savAccObj1.calculateSimpleInterest();
+		
+		savAccObj2.showBankAccount();
+		savAccObj2.calculateSimpleInterest();
+		
+		savAccObj3.showBankAccount();
+		savAccObj3.calculateSimpleInterest();
+		
 	}
 
 }
@@ -80,14 +116,24 @@ class BankAccount { //extends Object
 //Must define an explicit constructor
 class SavingsAccount extends BankAccount {
 	
-	float rateOfInterest;
+	static float rateOfInterest;
 	
-	SavingsAccount(int a, String b, double c, float d) {
+	static void showRateOfInterest() {
+		System.out.println("RATE : "+rateOfInterest);
+		//accountBalance=90000;
+	}
+	
+	static void setRateOfInterest(float r) {
+		System.out.println("Setting rateOfInterest : ");
+		rateOfInterest = r;
+	}
+	
+	SavingsAccount(int a, String b, double c) {
 		super(a,b,c); //for the ctor
-		rateOfInterest=d;
 		System.out.println("SavingsAccount ctor...");
 
 	}
+	//non-static
 	void calculateSimpleInterest() {
 		//pnr/100
 		double si = (accountBalance * 1 * rateOfInterest)/100;

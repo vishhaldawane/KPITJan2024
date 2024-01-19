@@ -18,7 +18,7 @@ public class FinalTest {
 	}
 }
 
-class Chess // developer : Gayathri
+final class Chess // developer : Gayathri
 {
 	final void moveBishop() {
 		System.out.println("moving bishop diagonally...back/forward...");

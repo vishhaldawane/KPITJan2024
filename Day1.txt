@@ -504,6 +504,10 @@ row 	1	50
 	controll		uncontrolled
 				1 to 4 
 
+	static
+
+	non-static
+
 	
 	FIELD		METHOD		CLASS
 ------------------------------------------------------
@@ -550,9 +554,60 @@ SPring 5
 
 
 
+		Circle circ1 = new Circle(50);
+
+
+	STACK				HEAP
+
+				PI
+				---------
+				| 3.14	|
+				---------
+
+				radius	
+				---------
+				| 50	|
+				----------
+	+----------------------> 1022
+	|
+	1022
+	circ1
+
+				radiusI
+				---------
+				| 60	|
+				---------
+	+----------------------> 1044
+	|
+	1044
+	circ1
 
 
 
+
+
+
+
+	-----------------
+	|  ICICI Bank	|
+	|-----	ROI	|
+	||   |	8.5	|
+	-----------------
+	
+	rate
+	8.5
+
+	static void showROI() {
+		sop(rate);
+	}
+	static void setROI(float r) {
+		rate = r;
+		accountBalance  =5000;
+		withdraw();
+	}
+
+
+	static canot access non-static
 
 
 

@@ -1,0 +1,258 @@
+
+public class JuiceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mango mangoObj = new Mango();
+		
+		mangoObj.setColor("Yellow");
+		mangoObj.setType("Alphanso");
+		mangoObj.setRipe(true);
+		mangoObj.setWeight(1.5f);
+		
+		System.out.println("mango object is "+mangoObj);
+		
+		Water water = new Water();
+		water.setType("Mineral");
+		water.setTemperature(23.5f);
+		water.setQuantity(100); //in ML
+		
+		System.out.println("water object is "+water);
+
+		
+				
+		Ice ice = new Ice();
+		ice.setShape("Cube"); 
+		ice.setQuantity(3.0f);
+		ice.setType("Packaged");
+		
+		System.out.println("ice object is "+ice);
+
+		
+		Sugar sugar = new Sugar();
+		sugar.setType("Organic");
+		sugar.setColor("Brown");
+		sugar.setQuantity(1.0f);//one table spoon
+		System.out.println("sugar object is "+sugar);
+
+		
+		//Kitchen theKithen = new Kitchen();
+		//Juice juice = theKithen.prepareSomething(mangoObj,ice,water,sugar);
+	}
+
+}
+
+class Kitchen {
+	
+	Juice prepareSomething(Mango mango, Ice ice, Water water, Sugar sugar) {
+		System.out.println("Preparing something1...");
+		Juice juice = new Juice();
+		return juice;
+	}
+	
+	MilkShake	prepareSomething(Mango mango, Ice ice, Water water, Sugar sugar,Milk milk) {
+		System.out.println("Preparing something2...");
+		MilkShake milkShake = new MilkShake();
+		return milkShake;
+	}
+	MilkShake	prepareSomething(Chickoo chiku, Ice ice, Water water, Sugar sugar,Milk milk) {
+		System.out.println("Preparing something3...");
+		MilkShake milkShake = new MilkShake();
+		return milkShake;
+	}
+}
+
+class Chickoo {
+	
+}
+
+class Milk {
+	
+}
+class Orange { 
+	
+}
+class MilkShake {
+	
+}
+class Mango  { 
+	
+	String type;
+	float weight;
+	String color;
+	boolean ripe;
+	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public float getWeight() {
+		return weight;
+	}
+	public void setWeight(float weight) {
+		this.weight = weight;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public boolean isRipe() {
+		return ripe;
+	}
+	public void setRipe(boolean ripe) {
+		this.ripe = ripe;
+	}
+	@Override
+	public String toString() {
+		return "Mango [type=" + type + ", weight=" + weight + ", color=" + color + ", ripe=" + ripe + "]";
+	}
+	
+	
+	
+}
+
+class Water {
+	String type;
+	float quantity;
+	float temperature;
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public float getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(float quantity) {
+		this.quantity = quantity;
+	}
+	public float getTemperature() {
+		return temperature;
+	}
+	public void setTemperature(float temperature) {
+		this.temperature = temperature;
+	}
+	@Override
+	public String toString() {
+		return "Water [type=" + type + ", quantity=" + quantity + ", temperature=" + temperature + "]";
+	}
+	
+	
+}
+class Sugar {
+	String type; 
+	float quantity;
+	String color;
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public float getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(float quantity) {
+		this.quantity = quantity;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	@Override
+	public String toString() {
+		return "Sugar [type=" + type + ", quantity=" + quantity + ", color=" + color + "]";
+	}
+	
+}
+class Ice {
+	
+	String type;
+	float quantity;
+	String shape;
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public float getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(float quantity) {
+		this.quantity = quantity;
+	}
+	public String getShape() {
+		return shape;
+	}
+	public void setShape(String shape) {
+		this.shape = shape;
+	}
+	@Override
+	public String toString() {
+		return "Ice [type=" + type + ", quantity=" + quantity + ", shape=" + shape + "]";
+	}
+	
+	
+	
+	
+}
+
+class Juice {
+	float quantity; //IN ML
+	String type;
+	float temperature;
+	boolean filtered; //true / false
+	String color;
+	public float getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(float quantity) {
+		this.quantity = quantity;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public float getTemperature() {
+		return temperature;
+	}
+	public void setTemperature(float temperature) {
+		this.temperature = temperature;
+	}
+	public boolean isFiltered() {
+		return filtered;
+	}
+	public void setFiltered(boolean filtered) {
+		this.filtered = filtered;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	@Override
+	public String toString() {
+		return "Juice [quantity=" + quantity + ", type=" + type + ", temperature=" + temperature + ", filtered="
+				+ filtered + ", color=" + color + "]";
+	}
+	
+	
+	
+	
+}
+
+
+
+
+

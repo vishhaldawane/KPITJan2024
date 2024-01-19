@@ -1,0 +1,67 @@
+
+public class JuiceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mango m = new Mango();
+		Water w = new Water();
+		Ice i = new Ice();
+		Sugar s = new Sugar();
+		
+		Kitchen theKithen = new Kitchen();
+		Juice js = theKithen.prepareSomething(m,i,w,s);
+	}
+
+}
+
+class Kitchen {
+	
+	Juice prepareSomething(Mango mango, Ice ice, Water water, Sugar sugar) {
+		System.out.println("Preparing something1...");
+		Juice juice = new Juice();
+		return juice;
+	}
+	
+	MilkShake	prepareSomething(Mango mango, Ice ice, Water water, Sugar sugar,Milk milk) {
+		System.out.println("Preparing something2...");
+		MilkShake milkShake = new MilkShake();
+		return milkShake;
+	}
+	MilkShake	prepareSomething(Chickoo chiku, Ice ice, Water water, Sugar sugar,Milk milk) {
+		System.out.println("Preparing something3...");
+		MilkShake milkShake = new MilkShake();
+		return milkShake;
+	}
+}
+
+class Chickoo {
+	
+}
+
+class Milk {
+	
+}
+class Orange { 
+	
+}
+class MilkShake {
+	
+}
+class Mango  { 
+	
+}
+class Water {
+	
+}
+class Fruit {
+	
+}
+class Sugar {
+	
+}
+class Ice {
+	
+}
+class Juice {
+	
+}

@@ -1,0 +1,123 @@
+
+public class JuiceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mango mangoObj = new Mango();
+		
+		mangoObj.setColor("Yellow");
+		mangoObj.setType("Alphanso");
+		mangoObj.setRipe(true);
+		mangoObj.setWeight(1.5f);
+		
+		System.out.println("mango object is "+mangoObj);
+		
+		/*Water w = new Water();
+		Ice i = new Ice();
+		Sugar s = new Sugar();
+		
+		Kitchen theKithen = new Kitchen();
+		Juice js = theKithen.prepareSomething(m,i,w,s);*/
+	}
+
+}
+
+class Kitchen {
+	
+	Juice prepareSomething(Mango mango, Ice ice, Water water, Sugar sugar) {
+		System.out.println("Preparing something1...");
+		Juice juice = new Juice();
+		return juice;
+	}
+	
+	MilkShake	prepareSomething(Mango mango, Ice ice, Water water, Sugar sugar,Milk milk) {
+		System.out.println("Preparing something2...");
+		MilkShake milkShake = new MilkShake();
+		return milkShake;
+	}
+	MilkShake	prepareSomething(Chickoo chiku, Ice ice, Water water, Sugar sugar,Milk milk) {
+		System.out.println("Preparing something3...");
+		MilkShake milkShake = new MilkShake();
+		return milkShake;
+	}
+}
+
+class Chickoo {
+	
+}
+
+class Milk {
+	
+}
+class Orange { 
+	
+}
+class MilkShake {
+	
+}
+class Mango  { 
+	
+	String type;
+	float weight;
+	String color;
+	boolean ripe;
+	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public float getWeight() {
+		return weight;
+	}
+	public void setWeight(float weight) {
+		this.weight = weight;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public boolean isRipe() {
+		return ripe;
+	}
+	public void setRipe(boolean ripe) {
+		this.ripe = ripe;
+	}
+	@Override
+	public String toString() {
+		return "Mango [type=" + type + ", weight=" + weight + ", color=" + color + ", ripe=" + ripe + "]";
+	}
+	
+	
+	
+}
+
+class Water {
+	String type;
+	float quantity;
+	float temperature;
+	
+}
+class Sugar {
+	String type; 
+	float quantity;
+	String color;
+	
+}
+class Ice {
+	
+	String type;
+	float quantity;
+	String shape;
+	
+	
+	
+	
+}
+
+class Juice {
+	
+}

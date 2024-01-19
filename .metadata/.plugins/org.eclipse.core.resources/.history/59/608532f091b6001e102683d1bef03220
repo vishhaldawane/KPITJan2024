@@ -1,0 +1,42 @@
+
+public class JuiceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Kitchen theKithen = new Kitchen();
+		theKithen.prepareSomething();
+	}
+
+}
+
+class Kitchen {
+	
+	void prepareSomething() {
+		System.out.println("Preparing something...");
+	}
+}
+
+class Milk {
+	
+}
+class Orange extends Fruit { //isA
+	
+}
+class MilkShake {
+	
+}
+class Mango extends Fruit { //isA
+	
+}
+class Fruit {
+	
+}
+class Sugar {
+	
+}
+class Ice {
+	
+}
+class Juice {
+	
+}

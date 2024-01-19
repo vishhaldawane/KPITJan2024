@@ -125,7 +125,7 @@ class Poet extends Human //isA
 		poetName = x;
 	}
 	
-	//producesA		   //usesA Pen	usesA Paper   uses String  uses String
+	//producesA		   //usesA Pen	usesA Paper
 		Poetry imagine(Pen thePen, Paper paper, String text, String dt) {
 			
 			System.out.println("Peot is imagining.....");

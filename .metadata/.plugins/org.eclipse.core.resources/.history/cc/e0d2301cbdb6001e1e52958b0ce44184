@@ -1,0 +1,36 @@
+
+public class BaloonCounterTest {
+	public static void main(String[] args) {
+	
+		
+		Baloon baloon1 = new Baloon("green");
+		baloon1.countBaloons();
+		Baloon baloon2 = new Baloon("red");
+
+		Baloon baloon3 = new Baloon("yellow");
+		Baloon baloon4 = new Baloon("blue");
+
+		Baloon baloon5 = new Baloon("purple");
+
+		
+		
+	}
+}
+
+class Baloon
+{
+	String color;
+	static int counter;
+	
+	void countBaloons() {
+		System.out.println("Total Baloons : "+counter);
+	}
+	
+	public Baloon(String color) {
+		super();
+		this.color = color;
+		++counter;
+	}
+	
+	
+}

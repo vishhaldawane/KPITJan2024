@@ -69,14 +69,23 @@ Features of Enterprise application
 7. SM
 
 
-
+constructable				constructable
+|					|
 Frequency				Frequency
 |					|
 invisible				visible
 |					|
 Unmanifest				Manifest
 Thought  + Feelings(Emotions)		Action + Result
+Escrow
+Dashboard
+of feelings
+bad <----> good
 
+		brain vs heart
+		|	  |
+		thought	  30 times more than brain
+		rational
 			TEAR
 
 
@@ -262,6 +271,39 @@ d.diagnose(); // Doctor::diagnose(); compile-time binding
 	- ability of a business entity to acquire properties
 	  from other existing entities
 
+	Inheritance of		vs	Inheritance of
+	Derivation			Implementation
+
+	regular classes		vs	abstract classes
+					and interfaces
+
+	A
+	|		X	Y
+	|single		|	|
+	B		---------
+	|multi		|
+	C		D
+	|		|multiple
+	-----------------
+		|
+		E
+		|
+	-----------------
+	|	|	|
+	P	Q	R
+		|	|
+		---------
+		    |
+		    S
+	a. single level
+	b. multi level
+	c. multiple level
+	d. hierarchical level
+
+
+
+
+
 
 		BankAccount baAcc1 = new BankAccount();
 		BankAccount baAcc2 = new BankAccount();
@@ -302,14 +344,128 @@ d.diagnose(); // Doctor::diagnose(); compile-time binding
 
 
 
+			Association
+			|
+	----------------------------------
+	|	|		|	|
+	isA	hasA		usesA	producesA
+
+
+	class HeatingCoil
+	{
+
+	}
+
+	class Microwave //whole
+	{
+		//part 
+		HeatingCoil theCoil = new HeatingCoil();
+
+	}
+
+	class Engine { }
+	class Wheel { }
+
+	class Vehicle { }
+
+	class LandVehicle extends Vehicle { }
+
+	class Car extends LandVehicle // isA
+	{
+		//define objects inside teh FIELD section
+		//hasA
+		Engine theEngine = new Engine();
+		Wheel right = new Wheel();
+		Wheel left = new Wheel();
+		Wheel rearRight = new Wheel();
+		Wheel rearLeft = new Wheel();
+		
+	}
+	
+
+
+	class Heart
+	{
+	}
+	class Brain { }
+	class Lung();
+	class Kidney{}
+	class Liver { }
+
+	class Human <-- Whole
+	{
+		Heart theHeart = new Heart(); <-part
+		Brain brain = new Brain();
+		Lung rightLung = new Lung();
+		Lung leftLung = new Lung();
+		Liver ..
+		Kidney ..
+	}
+
+	class Stethoscope
+	{
+
+	}
+
+	class Doctor extends Human // isA
+	{
+		int id;
+		int age;
+		String name;
+		Stethoscope stetho = new Stethoscope();
+		int numberOfPatientsHandled;
+	}
+	
+	class Surgeon extends Doctor //isA
+	{
+
+	}
 
 
 
+	Workbook <-- mysalary.xls <-- File
+
+		col
+		A	B	C	D 	....
+
+row 	1	50
+
+	2	60
+
+	3	70
+
+	4	=sum(A1..A3)
+
+	5	
+
+	Sheet1 | Sheet2 ...  
 
 
+	class Cell
+	{
+		String columnName;
+		int rowNumber;
+		String value;
 
+	}
 
+	class Sheet
+	{
+		Cell cell1 = new Cell("A",1,50);
+		Cell cell2 = new Cell("A",2,60);
+		Cell cell3 = new Cell("A",3,70);
+		Cell cell4 = new Cell("A",4,"=sum(A1..A3"));
 
+	}
+
+	class WorkBook extends File //isA
+	{
+		Sheet sheet1 = new Sheet();
+		Sheet sheet2 .. 
+		..
+		..
+
+	}
 
 
 

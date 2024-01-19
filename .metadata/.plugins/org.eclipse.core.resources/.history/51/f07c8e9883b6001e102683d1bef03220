@@ -1,0 +1,28 @@
+
+public class HasTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Human theHuman = new Human();
+		theHuman.thinking();
+		theHuman.feeling();
+		theHuman.sweetHeart.pumping();
+	}
+
+}
+class Heart
+{
+	void pumping() {
+		System.out.println("Pumping the blood..");
+	}
+}
+class Human {
+	Heart sweetHeart = new Heart();
+	
+	void thinking() {
+		System.out.println("Human is thinking...");
+	}
+	void feeling() {
+		System.out.println("Human is feeling....");
+	}
+}

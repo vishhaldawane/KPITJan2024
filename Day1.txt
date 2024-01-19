@@ -34,12 +34,12 @@ Desktop application	|	|
 Language Fundas		WEB	EJB	
 OOPS			http	non-http
 Packages		|		|
-Exception handling	Servlet	------------------
+*Exception handling	Servlet	------------------
 Multithreading		JSP	|	|	|
 Generics			Session Entity	Message
-Collections			|	   |	   |	
+*Collections			|Spring*   |JPA*   |	
 File IO		    Stateless  Stateful  BMP CMP SMS Mail
-JJDBC		bookmyshow	
+*JDBC		bookmyshow	
 |
 Advanced Java
 |

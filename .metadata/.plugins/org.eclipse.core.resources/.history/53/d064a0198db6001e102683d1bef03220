@@ -18,15 +18,9 @@ public class HasTest {
 		Paper whitePaper = new Paper();
 		
 		String text1 = "Every night in my dreams.....";
-		String text2 = "Mard Maratha....hum jo bhi disha me jayee.....";
-
 		
-		Poetry thePoetry1 = thePoet.imagine(reynoldsPen, whitePaper,text1,"15 Jan 2024");
-		thePoetry1.showPoetry();
-		
-		Poetry thePoetry2 = thePoet.imagine(reynoldsPen, whitePaper,text2,"19 Jan 2024");
-		thePoetry2.showPoetry();
-		
+		Poetry thePoetry = thePoet.imagine(reynoldsPen, whitePaper,text1,"19 Jan 2024");
+		thePoetry.showPoetry();
 		
 	/*	Poetry thePoetry = new Poetry();
 		thePoetry.creationDate="19th Jan 2024";

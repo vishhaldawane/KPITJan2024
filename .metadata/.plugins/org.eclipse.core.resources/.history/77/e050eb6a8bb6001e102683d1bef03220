@@ -8,7 +8,7 @@ public class HasTest {
 		//theHuman.feeling();
 		//theHuman.sweetHeart.pumping();
 		
-		Poet thePoet = new Poet("Javed Akhtar");
+		/*Poet thePoet = new Poet();
 		
 		thePoet.thinking();
 		thePoet.feeling();
@@ -17,26 +17,17 @@ public class HasTest {
 		Pen reynoldsPen = new Pen();
 		Paper whitePaper = new Paper();
 		
-		String text1 = "Every night in my dreams.....";
-		String text2 = "Mard Maratha....hum jo bhi disha me jayee.....";
-
+		thePoet.imagine(reynoldsPen, whitePaper);*/
 		
-		Poetry thePoetry1 = thePoet.imagine(reynoldsPen, whitePaper,text1,"15 Jan 2024");
-		thePoetry1.showPoetry();
-		
-		Poetry thePoetry2 = thePoet.imagine(reynoldsPen, whitePaper,text2,"19 Jan 2024");
-		thePoetry2.showPoetry();
-		
-		
-	/*	Poetry thePoetry = new Poetry();
+		Poetry thePoetry = new Poetry();
 		thePoetry.creationDate="19th Jan 2024";
 		thePoetry.numberOfLines=2;
 		thePoetry.poetName="Javed Akhtar";
 		thePoetry.theActualPoetry="Mard Maratha...";
 		thePoetry.theActualPoetry+="Hum Jo bhi disha me jay...";
 		
-		thePoetry.showPoetry();
-	*/	
+		
+		
 		
 	}
 
@@ -119,28 +110,16 @@ class Paper
 class Poet extends Human //isA
 {
 	
-	String poetName;
-	
-	Poet(String x) {
-		poetName = x;
-	}
-	
-	//producesA		   //usesA Pen	usesA Paper
-		Poetry imagine(Pen thePen, Paper paper, String text, String dt) {
+					 //usesA Pen	usesA Paper
+		void imagine(Pen thePen, Paper paper) {
 			
 			System.out.println("Peot is imagining.....");
 			thePen.write();
-			paper.lines=text;
-			
+			paper.lines="Every night in my dreams..\n";
+			paper.lines+="I see you, I feel you....\n";
+			paper.lines+="My heart will go on...";
 			paper.read();
-			
-			Poetry poem = new Poetry();
-			poem.creationDate=dt;
-			poem.theActualPoetry=paper.lines;
-			poem.numberOfLines=poem.theActualPoetry.length()/15;
-			poem.poetName=poetName;
-			
-			return poem;
+
 		}
 }
 

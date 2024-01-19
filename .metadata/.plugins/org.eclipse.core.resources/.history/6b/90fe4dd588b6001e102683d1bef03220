@@ -1,0 +1,105 @@
+
+public class HasTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Human theHuman = new Human();
+		//theHuman.thinking();
+		//theHuman.feeling();
+		//theHuman.sweetHeart.pumping();
+		
+		Poet thePoet = new Poet();
+		
+		thePoet.thinking();
+		thePoet.feeling();
+		thePoet.leftLung.exhale();
+		
+		Pen reynoldsPen = new Pen();
+		Paper whitePaper = new Paper();
+		
+		thePoet.imagine(reynoldsPen, whitePaper);
+	}
+
+}
+
+
+// Knowledge + applied = Wisdom
+
+class Heart
+{
+	void pumping() {
+		System.out.println("Pumping the blood..");
+	}
+}
+class Lung {
+	void inhale() {
+		System.out.println("inhaling...");
+	}
+	void exhale() {
+		System.out.println("exhaling....");
+	}
+}
+
+class Human {
+	
+	Heart sweetHeart = new Heart(); //hasA
+	
+//	sweetHeart.pumping(); illegal line / place
+	//System.out.println("exhaling....");
+
+	
+	Lung rightLung;
+	Lung leftLung;
+	
+	Human() {
+		System.out.println("Human ctor...");
+		
+		sweetHeart.pumping();
+		rightLung = new Lung();
+		leftLung = new Lung();
+		
+		rightLung.inhale();
+		leftLung.inhale();
+		
+		rightLung.exhale();
+		leftLung.exhale();
+		
+	}
+	
+	void thinking() {
+		System.out.println("Human is thinking...");
+	}
+	void feeling() {
+		System.out.println("Human is feeling....");
+	}
+}
+
+class Pen
+{
+	void write() {
+		System.out.println("Writing...");
+	}
+}
+class Paper
+{
+	String lines;
+	
+	void read() {
+		System.out.println("Lines : "+lines);
+	}
+}
+
+class Poet extends Human //isA
+{
+					 //usesA Pen	usesA Paper
+		void imagine(Pen thePen, Paper paper) {
+			
+			System.out.println("Peot is imagining.....");
+			thePen.write();
+			paper.lines="My heart will go on...";
+			paper.read();
+
+		}
+}
+
+

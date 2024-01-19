@@ -468,6 +468,98 @@ row 	1	50
 	}
 
 
+	class Camera
+	{
+		Lens lens = new Lens();//has
+
+		produced	used....
+		Photo click(Scene scene, Light light, Shadow shadow) {
+			Photo photo = new Photo();
+			return photo;	
+		}
+		zoomIn() { }
+		zoomOut() { }
+		focus() { }
+
+	}
+	class VideoCamera extends Camera
+	{
+		VideoClip record(MovingScene scene, Light l, Shadow sh) {
+		}
+
+	}
+
+	class Photographer
+	{
+		Camera cam = new Camera();
+	}
+
+	class Cinematographer extends Photographer
+	{
+		VideoCamera vidCam = new Camera();
+
+	}
+
+
+	controll		uncontrolled
+				1 to 4 
+
+	
+	FIELD		METHOD		CLASS
+------------------------------------------------------
+final	constact	cannot be	cannot 
+			overridden	become father
+
+static	shared across	to refer	-
+	all the objs	other static
+	of the class	members
+
+abstract NA		partial contract    a class
+			of a class	    optional
+			- method without    abstract
+			body		    method
+-------------------------------------------------------
+
+interfaces
+
+packages
+
+Exception handling = 1
+
+Generics Collection =2 
+
+JDBC = 3
+
+JPA = 4
+
+SPring 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

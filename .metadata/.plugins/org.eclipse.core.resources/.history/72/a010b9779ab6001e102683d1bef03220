@@ -1,0 +1,17 @@
+
+public class FinalTest {
+	public static void main(String[] args) {
+
+		final float PI=3.14f; // 22/7
+		
+		System.out.println("PI "+PI);
+		
+		PI=3.19f;
+		
+		System.out.println("PI "+PI);
+		
+		
+	}
+}
+
+

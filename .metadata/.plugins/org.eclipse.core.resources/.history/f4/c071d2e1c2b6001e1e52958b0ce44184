@@ -1,0 +1,99 @@
+
+public class AbstractTest {
+	public static void main(String[] args) {
+		
+	}
+}
+
+abstract class GeometricalShape
+{
+	abstract void calculateArea();
+	abstract void draw();
+	abstract void calculatePerimeter();
+}
+//The type Circle must implement the
+//inherited abstract method GeometricalShape.draw()
+
+//The type Circle must implement the 
+//inherited abstract method GeometricalShape.calculatePerimeter()
+
+//The type Circle must implement the 
+//inherited abstract method GeometricalShape.calculateArea()
+class Circle extends GeometricalShape
+{
+	int radius;
+	
+	public Circle(int radius) {
+		super();
+		this.radius = radius;
+	}
+	void draw() { 
+		System.out.println("drawing Circle...");
+	}
+	void calculatePerimeter() { 
+		float peri = 2 * 3.14f * radius;
+	}
+	void calculateArea() { 
+		float area = 3.14f  * radius * radius;
+	}
+}
+class Ellipse extends Circle //isA
+{
+	int radius2;
+	
+	
+	public Ellipse(int radius, int radius2) {
+		super(radius);
+		this.radius2 = radius2;
+	}
+	
+	void draw() { 
+		System.out.println("drawing Ellipse...");
+	}
+	void calculatePerimeter() { 
+		//float peri = 4 * side;
+	}
+	void calculateArea() { 
+		//float area = side * side;
+	}
+}
+
+class Square extends GeometricalShape
+{
+	int side;
+	void draw() { 
+		System.out.println("drawing square...");
+	}
+	void calculatePerimeter() { 
+		float peri = 4 * side;
+	}
+	void calculateArea() { 
+		float area = side * side;
+	}
+	
+}
+
+class Rectangle extends Square //isA
+{
+	int side2;
+	
+	void draw() { 
+		System.out.println("drawing square...");
+	}
+	void calculatePerimeter() { 
+		float peri = 2 * (side + side2);
+	}
+	void calculateArea() { 
+		float area = side * side2;
+	}
+	
+}
+
+
+
+
+
+
+
+
+

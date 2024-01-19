@@ -524,6 +524,91 @@ abstract NA		partial contract    a class
 			body		    method
 -------------------------------------------------------
 
+
+
+
+	abstract class GeometricalShape
+	{
+		abstract void draw(); // abstract function
+			//resides in an abstract class
+	}
+
+	class BankAccount
+	{
+
+	}
+
+
+
+
+	- abstract class meant for inheritance
+
+	- cannot instantiate abstract class
+
+	- it may have abstract methods
+
+		or may not have
+
+	- it may have non-abstract methods
+		so that all children can utilize them
+
+
+	State true or false
+	Q1) abstract class may have non-abstract methods
+
+		a) true
+		b) false
+		c) none of the above
+		d) all of the above
+
+
+	Q2) a  child class 
+	    must implement the abstract methods
+	    of its immediate abstract parent
+
+                a) true
+                b) false
+                c) none of the above
+                d) all of the above
+
+
+
+	abstract class GeometricalShape
+	{
+		abstract void draw(); // abstract function
+			//resides in an abstract class
+	}
+
+	interface  Shape
+	{
+		void draw();
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 interfaces
 
 packages

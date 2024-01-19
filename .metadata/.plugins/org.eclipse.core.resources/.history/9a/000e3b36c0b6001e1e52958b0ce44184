@@ -4,7 +4,7 @@ public class BankTest {
 	public static void main(String[] args) {
 		//Class	  refToObj allocator   Ctor
 		//  |		  |		 |			 |
-			BankAccount baAcc1 = new BankAccount(101,"Prakhar",50000);
+		/*	BankAccount baAcc1 = new BankAccount(101,"Prakhar",50000);
 			BankAccount baAcc2 = new BankAccount(102,"Chahat",55000);
 			BankAccount baAcc3 = new BankAccount(103,"Harsh",65000);
 			BankAccount baAcc4 = new BankAccount(104,"Shikha",75000);
@@ -31,7 +31,7 @@ public class BankTest {
 			baAcc4.showBankAccount();
 			baAcc5.showBankAccount();
 			baAcc6.showBankAccount();
-			
+			*/
 		
 		SavingsAccount.showRateOfInterest();
 		SavingsAccount.setRateOfInterest(6.5f);
@@ -75,7 +75,7 @@ public class BankTest {
 	}
 
 }
-abstract class BankAccount { //extends Object 
+class BankAccount { //extends Object 
 	//DATA MEMBERS / fields
 	
 	int accountNumber;

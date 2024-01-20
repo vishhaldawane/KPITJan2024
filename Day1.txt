@@ -786,6 +786,160 @@ Guitar
 
 
 
+			I
+			|
+		----------------
+		|		|
+		MusI		MedI
+		|
+	--------------
+	|	|	|
+	SBMI	ABMI DBMI
+	|
+	------------------
+	|		|
+	| Plucking	| Bowing
+	| |pluck();	| | bow();
+	Guitar		Violin
+	
+	
+
+
+
+
+	Packages 	= directories on the Operating system
+	|			folders 
+	in java
+
+
+	packages = to organize the relevant classes in a folder
+
+	java.lang		java\lang
+	java.awt		java\awt
+
+
+			java
+			|
+		-------------------------------------
+		|	|	|	|	|
+		lang	awt	sql	net	util
+		|	|	|	 |	|
+		Object	Button	Driver Socket	LinkedList
+		String  Frame   ResultSet	ArrayList
+		Thread  Checkbox
+		Exception
+
+
+	use the package statement to make a package
+		- package must be the first code in any 
+		java source if issued
+
+
+	use the import statement to avail the package
+
+
+	java.lang <-- default package issued for java codes
+
+
+
+			ACCESS SPECIFIERS
+
+		1.       <-- a blank | default | friendly
+				within the same folder/package
+			ButterFly and Tiger can access each
+			other token to create object of each 
+			other
+
+		2. private <-- referred within the class code body
+		3. protected <-- can be referred by the child class
+			within the same package
+			or outside of that package
+
+			- using the parent class reference
+			protected is referred within the
+			same package BUT Not in the
+			other pacakges
+
+			- without using the parent class
+			reference | child can directly
+			refer the protected members
+			within the same or diff pacakge
+
+
+		4. public <-- to the whole world
+
+
+
+
+			jungle
+			|
+		--------------------------
+		|	|	|	|
+		farm	river	tree	cave
+		|	|	|	|
+	  FarmHouse	Frog	Parrot	Lion
+			Fish	Sparrow Bear
+				Monkey  Tiger
+				Chimp	WhiteTiger
+
+		
+Royal Science of God Realization
+
+Human Mind = Dhritrashtra in Mahabharata
+	|
+	Desires = Duryodhana
+
+Good Habits vs Bad Habits = Dronacharya
+
+EGO = Bhishma
+
+
+Arjuna 	= Manipura Chakra
+Krishna = Adnya Chakra - Third EYE 
+
+
+
+
+
+
+Naming Convention in Java
+-----------------------------
+
+
+	1. ClassName - DriverManager
+
+
+	2. methodName - setLookAndFeel() { }
+
+
+	3. variableName - socialSecurityNumber=123213
+			
+
+	4. Packages	- jungle.cave
+
+			lengthOnTarget=3;
+
+			Jungle.Cave.tiger.Jump(LengthOnTarget);
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,19 +1,19 @@
 package jungle.farm;
 //The type jungle.cave.Tiger is not visible
-import jungle.cave.Tiger;
+import jungle.tree.Monkey;
 
-
+//non-child AND diff-pack
 public class FarmHouse {
 
 	public static void main(String[] args) {
 		
-		Tiger tigerRef = new Tiger();
-		tigerRef.printValues();
+		Monkey monRef = new Monkey();
+		//monRef.jumping();
 
-		System.out.println("defaultA   : "+tigerRef.defaultA);
-		System.out.println("privateB   : "+tigerRef.privateB);
-		System.out.println("protectedC : "+tigerRef.protectedC);
-		System.out.println("publicD    : "+tigerRef.publicD);
+		System.out.println("defaultA   : "+monRef.defaultA);
+		System.out.println("privateB   : "+monRef.privateB);
+		System.out.println("protectedC : "+monRef.protectedC);
+		System.out.println("publicD    : "+monRef.publicD);
 	
 	}
 

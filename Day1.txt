@@ -937,6 +937,84 @@ Naming Convention in Java
 
 
 
+Exception Handling
+-------------------
+
+	handling run time errors
+
+
+			Errors
+			|
+	-----------------------------------
+	|	|	|	|	|
+	compile run	linker	fatal	logical
+	|	 |	  |	  |	  |
+	syntax Exception missing  term    4+4=16
+			 libraries
+					
+	;	10/0	 .jar file  out of    	
+	missing		missing	    memory
+
+		
+		To handle runtime errors
+
+
+	checked				unchecked
+	by the compiler			by the compiler
+	
+try
+catch
+throw
+throws
+finally
+
+
+			Object
+			|
+			Throwable
+			| getMessage()
+		-------------------
+		|isA		|isA
+		Error		Exception
+				|checked
+		--------------------------
+		|unchecked		|
+	RuntimeException	------------------
+	|||  ||||||		|	|	|
+      NPE|AE |		   IOException SQLExce.. ...
+       IOBE  |
+       | |
+   SIOBE AIOBE
+		
+
+
+
+
+
+			Car
+
+				
+	shortDrive()		longDrive()
+	|			|
+	3 km			300 km
+
+
+	1 CoolantException
+	2 FuelException
+	3 StepneyException
+	4 InfotainmentException
+	5 ACException
+	6 SeatBeltException
+	7 GearException
+	8 AccidentException
+	9 AirBagException
+	10 TrafficException
+	11 ParkingException
+	12 TyrePressureException
+	13 TyreTemperatureExceededException
+	
+
+
 
 
 

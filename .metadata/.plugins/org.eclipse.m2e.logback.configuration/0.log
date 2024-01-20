@@ -11,3 +11,6 @@
 2024-01-20 09:14:18,099 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2024-01-20 09:14:19,092 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
 2024-01-20 10:15:46,561 [Worker-27: Auto share git projects] WARN  org.eclipse.jgit.util.FS_POSIX - null
+2024-01-20 16:12:33,983 [main] WARN  org.eclipse.jgit.util.FS_POSIX - null
+2024-01-20 16:12:36,521 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-01-20 16:12:46,804 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.

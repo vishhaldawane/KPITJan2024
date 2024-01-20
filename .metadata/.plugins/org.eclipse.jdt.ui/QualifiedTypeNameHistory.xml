@@ -8,4 +8,11 @@
     <fullyQualifiedTypeName name="SavingsAccount"/>
     <fullyQualifiedTypeName name="GeometricalShape"/>
     <fullyQualifiedTypeName name="Rectangle"/>
+    <fullyQualifiedTypeName name="FundTransferService"/>
+    <fullyQualifiedTypeName name="MusicalInstrument"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.String"/>
+    <fullyQualifiedTypeName name="StringBasedMusicalInstrument"/>
+    <fullyQualifiedTypeName name="SurgicalMedicalInstrument"/>
+    <fullyQualifiedTypeName name="SurgicalCutter"/>
+    <fullyQualifiedTypeName name="jungle.tree.Monkey"/>
 </qualifiedTypeNameHistroy>

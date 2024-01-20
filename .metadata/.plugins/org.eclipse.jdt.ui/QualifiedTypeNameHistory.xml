@@ -5,4 +5,7 @@
     <fullyQualifiedTypeName name="Poetry"/>
     <fullyQualifiedTypeName name="Chickoo"/>
     <fullyQualifiedTypeName name="GraphicalChess"/>
+    <fullyQualifiedTypeName name="SavingsAccount"/>
+    <fullyQualifiedTypeName name="GeometricalShape"/>
+    <fullyQualifiedTypeName name="Rectangle"/>
 </qualifiedTypeNameHistroy>

@@ -704,6 +704,99 @@ SPring 5
 
 
 
+	Light <-- pure partial
+	SunLight <-- partial info
+	MoonLight
+	TubeLight
+
+
+	GeometricalShape
+	Shape
+
+interface Instrument
+{
+	void use();
+}
+abstract class MusicalInstrument implements Instrument //isA
+{
+	abstract void play(); + 1	
+	public void use() { }
+}
+abstract class StringBasedMusicalInstrument extends MusicalInstrument
+{
+	abstract void tuneStrings() + 2
+	void clean() { } //b. inherited to its child
+	void packIt() { } 
+}
+class Guitar extends StringBasedMusicalInstrument
+{
+	void pluck() { } // a. exclusive
+	void packIt() { } //c. inherited-cum-overridden
+	void play() { } //d. implemented - mandatory
+	void tuneString() { } //d. implemented - mandatory
+	public void use() { } //d. implemented - mandatory
+}
+
+
+	Object x = new HeartSurgeon();
+
+	x.toString()
+	x.diagnose();
+	x.doSurgery();
+	x.checkECG();
+
+
+	Guitar guitar = new Guitar();
+
+	Instrument i = guitar; 
+	i.use();
+	i.play();
+	i.tuneString();
+	i.pluck();
+			Instrument <-- pure - Pure AC - interface
+			     |use();
+	-------------------------------------------
+	|					|
+MusicalInstrument <-AC			MedicalInstrument<--AC
+	|play();				|diagnose();
+--------------------------------	-----------------
+  |			|		|		|
+StringBased	AirBased <--AC		Surgical	Pathological
+Musical		Musical			Medical		Medical
+Instrument	Instrument		Instrument	Instrument
+|tuneStrings();	|			|sterilize();	|read();
+|clean(){..}				|		|
+Guitar	Violin	Flute <--concrete	Cutter		ECGMachine
+| a) pluck(){}				| cut() { }	| read
+| b) tuneStrings(){} 			|		| heart
+| b) play(){}						  Beats();
+| b) use(){}
+| c) inherited
+| d) overridden
+|  clean(){ ..... } <--d
+|
+Electronic
+Guitar	
+| presets();
+
+	interfaces
+
+		- pure abstract class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

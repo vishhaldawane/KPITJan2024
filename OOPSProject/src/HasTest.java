@@ -60,7 +60,7 @@ class Lung {
 	}
 }
 
-class Human {
+class Human2 {
 	
 	Heart sweetHeart = new Heart(); //hasA
 	
@@ -71,7 +71,7 @@ class Human {
 	Lung rightLung;
 	Lung leftLung;
 	
-	Human() {
+	Human2() {
 		System.out.println("Human ctor...");
 		
 		sweetHeart.pumping();
@@ -116,7 +116,7 @@ class Paper
 	}
 }
 
-class Poet extends Human //isA
+class Poet extends Human2 //isA
 {
 	
 	String poetName;

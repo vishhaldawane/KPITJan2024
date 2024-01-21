@@ -1,4 +1,16 @@
 
+1 exception
+	Rocket - launch - IgnitionExcepiton, BoosterException
+2 collection
+	ChemicalElement { atomicnumber,aweight,aname }
+		peridicTable as <--TreeSet
+	Comparable
+
+3 jdbc
+	
+4 jpa
+5 spring
+
 
 		E	|	B		
 		-----------------
@@ -1208,20 +1220,57 @@ growable
 		TreeMap		HashMap
 
 
-
-
-
-
-
-
-
-
-
 Sky   |V
 Air   |A
 Fire  |M
 Water |S
 Earth |M
+
+
+GET940
+	TreeMapTest.java
+
+
+
+JDBC
+
+	Java Database Connectivity
+
+
+
+	Java	<-----------------> open database
+	
+		DriverManager
+		| registerDriver()
+		| getConnection()
+	--------+
+	|
+	Driver ------------------> Connection
+					|
+			-----------------------------
+			|	|		 |
+		  Statement  PreparedStatement CallableStatement
+		
+
+	1. Know ur database [ mysql ]
+	2. know the username and password of it
+	3. know the drivername for it to connect
+	4. DriverManager.registerDriver()
+	5. Connction conn =DriverManager.getConnection()
+	6. Statement st = conn.createStatement();
+	7. ResultSet rs = st.executeQuery();
+	8. process the rs
+	9. close the rs, st,conn
+
+
+
+DriverClass
+	com.mysql.jdbc.Driver
+
+DSN
+	jdbc:mysql://localhost:3306/mysql","root","root"
+
+
 
 
 

@@ -8,7 +8,8 @@ public class ArrayListTest {
 //		ArrayList<Kite> kiteList = new ArrayList<Kite>();
 //		LinkedList<Kite> kiteList = new LinkedList<Kite>();
 		TreeSet<Kite> kiteList = new TreeSet<Kite>();
-
+		//TreeSet<ChemicalElement> periodicTableSet = new TreeSet<ChemicalElement>();
+		
 //		HashSet<Kite> kiteList = new HashSet<Kite>();
 
 		System.out.println("Container is ready....");

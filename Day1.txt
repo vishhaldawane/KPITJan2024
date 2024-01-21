@@ -1136,10 +1136,45 @@ class PUCException extends Exception
 
 
 
+	Components Orthogonal Space
+
+
+			X - Content
+			|data type
+			|   ButterMilk
+			|   FriedRice
+			|   Paneer Chilly
+			|   Noodles
+			|   Pickle
+		--------------------
+		|		|
+		Y		Z
+		|		|
+	Container		Algorithm
+	|	|		| drink();
+	|	+------[ I ]----+ eat();
+     Glass		 |
+     Plate	       Iterator
+     Bowl		|
+			Straw
+			Spoon
+			Fork
+			ChopStiks
 
 
 
 
+
+
+
+
+
+
+Sky   |V
+Air   |A
+Fire  |M
+Water |S
+Earth |M
 
 
 

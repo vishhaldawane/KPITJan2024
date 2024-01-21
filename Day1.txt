@@ -1272,6 +1272,15 @@ DSN
 
 
 
+	1. right click project
+	2. properties
+	3. java build path
+	4. Libraries TAB
+	5. click classpath
+	6. Add External Jars <--button
+	7. browse the mysql-connector folder [ downloaded ]
+	8. select the jar file - mysql-connector-j-0.8.0.32.jar
+
 
 
 

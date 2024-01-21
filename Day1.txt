@@ -1018,6 +1018,124 @@ finally
 
 
 
+	You cannot decide your future.
+	But you can decide your habits.
+	And your habits will decide your future.
+
+
+
+
+	Exception 
+	
+
+	try
+	{
+		open a file1,2,3
+		code1
+		code2
+		code3
+	}
+	catch(....) { }
+	catch(....) {
+		System.exit(12);
+	 }
+	catch(....) { }
+	catch(....) { }
+	catch(....) { }
+	catch(....) { }
+	finally {
+		bound to run regardless of the exception
+		close the file 1,2,3
+	}
+
+
+	try
+	{
+	}
+	finally {
+	}
+
+
+
+
+
+
+
+
+	try
+	{
+	}
+	catch() { }
+
+	try
+	{
+	}
+	finally { }
+
+	try {
+	}
+	finally { }
+	catch() {}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	throw
+	throws
+
+
+
+
+
+
+
+
+
+
+
+//unchecked
+class SpeedLimitExceededException extends RuntimeException
+{
+}
+//checked
+class PUCException extends Exception 
+{
+}
+
+
+	class Car
+	{
+		void longDrive() throws PUCException,.,.,.,
+		{
+			for(...300){
+			 ...if..
+			  throw new SpeedLimitExeededException();
+			..
+			..if..
+			  throw new PUCException();
+			}
+		}
+	}
+
+
+
+
 
 
 

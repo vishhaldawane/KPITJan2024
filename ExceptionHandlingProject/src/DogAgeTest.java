@@ -21,7 +21,8 @@ class Dog
 	String name;
 	int age;
 	
-	public Dog(String name, int age) {
+	public Dog(String name, int age) //throws XXX
+	{
 		System.out.println("-> Dog ctor started...");
 		this.name = name;
 		

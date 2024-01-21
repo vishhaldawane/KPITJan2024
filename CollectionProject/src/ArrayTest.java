@@ -69,7 +69,7 @@ public class ArrayTest {
 	}
 }
 
-class Kite // struct Kite { }
+class Kite implements Comparable<Kite> // struct Kite { }
 {
 	String color;
 	String owner;
@@ -84,6 +84,12 @@ class Kite // struct Kite { }
 	@Override
 	public String toString() {
 		return "Kite [color=" + color + ", owner=" + owner + ", length=" + length + "]";
+	}
+	
+	
+	public int compareTo(Kite o) {
+		System.out.println("Comparing "+length+ " with "+o.length);
+		return Integer.compare(length, o.length);
 	}
 	
 	

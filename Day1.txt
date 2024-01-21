@@ -1162,6 +1162,53 @@ class PUCException extends Exception
 			ChopStiks
 
 
+			     Iterable <<i>>
+				|
+			     Collection <<i>>
+				|
+		---------------------------------
+		|				|
+		List <<i>>			Set <<i>>
+		|duplicate			|unique
+	--------------------		------------------
+	|		|		|		|
+  ArrayList	  LinkedList	   TreeSet	   HashSet <-C
+ +--+		|   |->|  |->|  |
+ |  |0		| n1|<-|n2|<-|n3|
+ +--+		 doubley linked
+ |  |1
+ +--+
+ |  |2
+ +--+
+ |  |3
+   |
+growable
+
+				50
+				|
+			-------------------
+			|		  |
+			30		  70
+			|		  |
+		-----------------	----------
+		|		|	|	|
+		10		40	60     80
+		|
+	    ---------
+	    |
+	    5
+
+
+		Comparable <---->  Comparator
+
+			Map <<i>>
+			|<Key,Value>
+		------------------
+		|		|
+		TreeMap		HashMap
+
+
+
 
 
 

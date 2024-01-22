@@ -2695,3 +2695,102 @@ Unexpected character (<) at position 0.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 09:38:15.701
 !MESSAGE executing callback sts4.classpath.RvCxdrYG SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:43:50.922
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RvCxdrYG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:43:50.922
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.RvCxdrYG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:43:50.923
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:43:50.923
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RvCxdrYG => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:00.446
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:00.447
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@454cde3d[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=552)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:00.448
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.746
+!MESSAGE Boot LS startup time from start to initialized: 2298ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.882
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ItkAMDHGisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.883
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.884
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.885
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.886
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.887
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ItkAMDHG => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.888
+!MESSAGE classpath=4 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.889
+!MESSAGE buffering callback sts4.classpath.ItkAMDHG JdbcProject false 4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.890
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.891
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.891
+!MESSAGE buffering callback sts4.classpath.ItkAMDHG CollectionProject false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.892
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.893
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.893
+!MESSAGE buffering callback sts4.classpath.ItkAMDHG ExceptionHandlingProject false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.894
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.895
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.895
+!MESSAGE buffering callback sts4.classpath.ItkAMDHG InterfaceProject false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.896
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.897
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.897
+!MESSAGE buffering callback sts4.classpath.ItkAMDHG OOPSProject false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.897
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.898
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.898
+!MESSAGE buffering callback sts4.classpath.ItkAMDHG PackageProject false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:02.900
+!MESSAGE executing callback sts4.classpath.ItkAMDHG 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-22 10:44:03.258
+!MESSAGE executing callback sts4.classpath.ItkAMDHG SUCCESS [done]

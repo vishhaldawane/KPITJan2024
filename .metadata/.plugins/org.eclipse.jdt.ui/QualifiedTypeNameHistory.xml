@@ -15,4 +15,22 @@
     <fullyQualifiedTypeName name="SurgicalMedicalInstrument"/>
     <fullyQualifiedTypeName name="SurgicalCutter"/>
     <fullyQualifiedTypeName name="jungle.tree.Monkey"/>
+    <fullyQualifiedTypeName name="CoolantException"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="PUCException"/>
+    <fullyQualifiedTypeName name="SpeedLimitExceededException"/>
+    <fullyQualifiedTypeName name="TrafficException"/>
+    <fullyQualifiedTypeName name="car.exception.PUCException"/>
+    <fullyQualifiedTypeName name="car.exception.TrafficException"/>
+    <fullyQualifiedTypeName name="car.exception.SpeedLimitExceededException"/>
+    <fullyQualifiedTypeName name="car.parking.Car"/>
+    <fullyQualifiedTypeName name="car.exception.CoolantException"/>
+    <fullyQualifiedTypeName name="DrunkenMaster"/>
+    <fullyQualifiedTypeName name="DrunkenDisciple"/>
+    <fullyQualifiedTypeName name="KnockDownException"/>
+    <fullyQualifiedTypeName name="IntegerPair"/>
+    <fullyQualifiedTypeName name="FloatPair"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.hsqldb.jdbc.JDBCDriver"/>
 </qualifiedTypeNameHistroy>

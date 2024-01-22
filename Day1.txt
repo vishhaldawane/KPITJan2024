@@ -7,7 +7,11 @@
 	Comparable
 
 3 jdbc
-	
+		CRUD operation
+		create
+		read record
+		update record
+		delete record	
 4 jpa
 5 spring
 
@@ -1250,7 +1254,8 @@ JDBC
 			-----------------------------
 			|	|		 |
 		  Statement  PreparedStatement CallableStatement
-		
+		SELECT     INSERT/UPDATE/DELETE	  procedure/functions
+	
 
 	1. Know ur database [ mysql ]
 	2. know the username and password of it

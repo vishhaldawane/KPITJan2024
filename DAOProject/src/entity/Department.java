@@ -1,10 +1,12 @@
 package entity;
 
-public //1. pojo
-public class Department {
-	private int departmentNumber;
-	private String departmentLocation;
-	private String departmentName;
+ //1. pojo
+public class Department { //mapped with mydept10 TABLE
+	private int departmentNumber; //COlumn
+	private String departmentLocation; //column
+	private String departmentName; //column
+	
+	//JPA
 	
 	public Department() {
 		super();

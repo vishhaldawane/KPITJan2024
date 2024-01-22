@@ -7,6 +7,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import dao.DepartmentDAO;
+import dao.DepartmentDAOImpl;
+import entity.Department;
+
 public class DAOTest {
 	public static void main(String[] args) {
 		

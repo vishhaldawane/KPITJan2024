@@ -17,7 +17,7 @@ public class DepartmentDAOImpl implements DepartmentDAO
 {
 	Connection conn2 ;
 
-	DepartmentDAOImpl() {
+	public DepartmentDAOImpl() {
 		System.out.println("DepartmentDAOImpl() ctor....");
 		try {
 			

@@ -1,0 +1,147 @@
+
+	Persistence
+	|
+	storing the java object on the database as a row
+			  |				|
+			fields				colomns
+
+	class Department
+	{
+		int departmentNumber;
+		String deptName;
+		String location;
+			ctor/get/set
+	}
+
+	Java's Persistence API
+			    |
+			   set of classes with built in functionalities
+
+
+	ORM framework = object relational mapping
+			 |		|
+			java		table
+	Hibernate
+	
+
+
+
+
+
+
+
+	Jdbc
+	|
+	problems
+	| getInt, getString, getFloat
+	|
+	DAO
+	|
+	+------- Department	Employee	Customer    BankAccount
+			getDepartmentNumber
+			setDepartmentNumber
+		 DepartmentDAO
+			5 methods
+		 DepartmentDAOImpl
+			ctor = Driver loading, get connection
+			5 method implemented
+		createDept, updateDept,deleteDept,readDept, readDepts
+		insert..    update..    delete...  select    select all
+
+	insert into dept values (?,?,?);
+	insert into emp  value  (?,?,?);
+	<---------->     <------------->		
+		
+					JPA
+				Instrument
+				MSI
+				SBMI
+
+
+	
+Guitar
+  pluck
+Hibernate F/w  = orm framework
+CDMA
+-vendor lock=in
+
+----------------------------------------------------
+
+
+
+
+DAO
+1. pojo		poji		pojiimpl
+
+
+
+JPA
+-----------
+Maven project
+		
+
+	machine1		machine2		machine3
+	jdk11			jdk15			jdk17
+	mysql8.1		mysql8.2		mysql.8.3
+	|
+	JpaProject-------------->
+	|
+	pom.xml
+				MyJPAProject
+				|
+			---------------------------
+			|			|
+			src			pom.xml
+			|			|(1)
+		-------------------	dependencies declarations
+		|		|
+		main		test	
+		|		  |
+		---------	  java
+		|	|
+		java	resources
+		|	  |
+		Pojo	META-INF | (2)
+		EMF	    |		unitName=MyJPA
+		EM	 persistence.xml(7keys=values)
+
+SBIHYB/OrmDemo.zip
+
+1. pojo
+
+	@Entity
+	@Table(name="dept10")
+	class Department
+	{
+		@Id
+		int departmentNumber;
+		String deptName;
+		String location;
+			ctor/get/set
+	}
+2. EntityManagerFactory
+	|
+	EntityManager
+		| Department d = new Department(); d.setters
+	persist(d); <-- insert query is generated
+	
+3. META-INF\persistence.xml
+		 |
+		driver name, url, username, password
+		and other jpa settings are configured
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.kpit</groupId>
+  <artifactId>SpringDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+   <properties>
+    
+  	<spring-framework.version>5.1.13.RELEASE</spring-framework.version>
+  	
+  </properties>
+  
+  
+  
+	<dependencies>
+	
+	<dependency>   <!-- 1 -->
+  		<groupId>org.springframework</groupId> <!-- goes to this website -->
+  		<artifactId>spring-context</artifactId> <!-- and downloads teh jar file named as "spring-context.5.1.13.RELEASE.jar" -->
+  		<version>${spring-framework.version}</version>								    <!--       artifact    version -->
+  	</dependency>	
+  	
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-test</artifactId>
+  		<version>${spring-framework.version}</version>
+  	</dependency>
+		
+	</dependencies>
+  
+</project>

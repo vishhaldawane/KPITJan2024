@@ -6,6 +6,8 @@
   
   
    <properties>
+    <maven.compiler.target>11</maven.compiler.target>
+	<maven.compiler.source>11</maven.compiler.source>
     
   	<spring-framework.version>5.1.13.RELEASE</spring-framework.version>
   	

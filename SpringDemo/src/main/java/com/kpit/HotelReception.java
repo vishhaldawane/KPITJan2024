@@ -1,4 +1,8 @@
 package com.kpit;
+
+import org.springframework.stereotype.Component;
+
+@Component("hotelRec")
 public class HotelReception {
 	public HotelReception() {
 		System.out.println("HotelReception() ctor..."+this.hashCode());

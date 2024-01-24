@@ -3,6 +3,8 @@ package com.kpit;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.kpit.myaccs.Account;
+
 public class SpringTest {
 	public static void main(String[] args) {
 		System.out.println("Begin main");
@@ -10,6 +12,9 @@ public class SpringTest {
 			ApplicationContext ctx = new ClassPathXmlApplicationContext("myspring.xml");
 		System.out.println("=>ApplicationContext created....");
 
+		Account accObj = (Account) ctx.getBean("acc");
+		accObj.withdraw();
+		accObj.deposit();
 		
 		HotelReception reception = (HotelReception) ctx.getBean("hotelRec");
 		reception.checkRooms();

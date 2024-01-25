@@ -5,9 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 @Entity
 @Table(name="car_tbl")
 public class Car {
@@ -49,6 +51,11 @@ public class Car {
 
 	public void setCarPrice(float carPrice) {
 		this.carPrice = carPrice;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [carNumber=" + carNumber + ", carName=" + carName + ", carPrice=" + carPrice + "]";
 	}
 	
 	

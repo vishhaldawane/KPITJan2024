@@ -1428,10 +1428,38 @@ EM		persistence.xml
 
 
 
+	pojo
+A		Car
+
+	repo
+B		CarRepository
+		CarRepositoryImpl
+				src/main/test/CarRepositoryTesting
+				- 5 test cases to cross
+				verify/check the crud functions
+				whether they are properly 
+				running or not...
+			createCar(Car c)
+			{
+				..
+				manager.persist(c);
+				..
+			}
+	service
+C		CarService
+			createCarService() {
+				....
+				carRepo.createCar(car);
+				...
+			}
 
 
 
 
+	controller
+D		CarController
+
+				PostMan
 
 
 

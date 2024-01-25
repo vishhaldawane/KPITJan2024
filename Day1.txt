@@ -1362,6 +1362,66 @@ class Address
 
 
 
+JPA
+-----
+	1. create maven project
+	2. create a simple project checkbox
+	3. select group id as com.kpit
+	   select artifact id as : JPAProject	
+	4. pom.xml to be configured
+		as per the predefined pom.xml
+		from existing project SBIHYD
+	5. META-INF/persistence.xml	
+		copied in src/main/resources folder
+	6. delete line number 12 if it is there
+	7. change teh database name to xdb if it is
+		HSQLDB
+	8. SET UP IS DONE
+
+
+
+
+
+	
+		Project structure
+
+
+	Tiger.class Lion.class Chitah.class
+
+	jar -cvf wildanimals.jar Tiger.class Lion.class
+				 Chitah.class
+
+	-c create
+	-v verbose [ show the progress ]
+	-f the jar file name specified
+
+.tar
+
+.rar
+
+.jar file
+-archieve = collection of multiple files bundled 
+
+			JPAProject
+			|
+		-----------------
+		|		|
+		src		pom.xml
+		|TDD		 3 dependecies
+	-----------------	 a. hsql
+	|		|	 b. hibernate
+	main		test	 c. jpa
+	|		|JUnit5	
+-----------------	testcase1
+|		|	testcase2, testcase3
+java		resources
+|		|
+Pojo		META-INF
+EMF		|
+EM		persistence.xml
+		7 keys configuration
+		dialect, showsql, hbm2ddl
+		driver,url,username,password
 
 
 

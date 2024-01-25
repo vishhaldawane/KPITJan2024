@@ -1,0 +1,25 @@
+server.port=8090
+spring.jpa.hibernate.ddl-auto=update 
+
+
+#database connection settings here HSQL SPECIFIC
+
+
+spring.datasource.url=jdbc:hsqldb:hsql://localhost/mydb
+spring.datasource.username=SA
+spring.datasource.password=
+spring.datasource.driver-class-name=org.hsqldb.jdbc.JDBCDriver
+spring.jpa.database-platform=org.hibernate.dialect.HSQLDialect
+
+#ORM settings
+spring.jpa.generate-ddl=true
+spring.jpa.show-sql=true
+
+spring.jta.atomikos.datasource.max-pool-size=3
+
+
+
+
+spring.datasource.hikari.minimum-idle=10
+spring.datasource.hikari.maximum-pool-size=10
+spring.datasource.hikari.idle-timeout=2000

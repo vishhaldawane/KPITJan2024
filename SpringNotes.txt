@@ -1,0 +1,66 @@
+
+
+	Spring 
+
+		Dependency Injection Framework
+		IOC = inversion of control
+
+		Account a = new Account(); // not this way
+
+		Account a = Bank.getAccount(); // Bank is a factory to
+						generate Account for us
+
+		same way, spring has a bean factory
+		-tell the bean factory to give us the objects
+
+		myspring.xml file would contain the configuration of 
+		your classes in xml format
+
+		e.g
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("myspring.xml");
+		Account acc = 	ctx.getBean();
+
+
+		Account a = new Account();
+
+
+
+
+
+	
+	1. create a maven project
+	2. create a simple project (skip archetype )
+	3. group id and artifact id
+	4. pom.xml	
+		configured with
+			<spring-context>
+			<spring-test>
+			..
+			<spring-jpa>
+			<spring-jdbc>
+			...
+
+	5. configure META/INF/myspring.xml
+		- declare all your concerned classe inside this file
+		in xml format
+		<bean id="acc" class="com.kpit.Account">
+		</bean>
+
+	6. write your code to work with
+		ApplicationContext ctx = new ClasspathXMLApplicationContext("myspring.xml");
+		Account a = ctx.getBean("acc");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

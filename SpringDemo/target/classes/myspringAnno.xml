@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop">
+  
+  	<!-- A    fighting skills Acting academy -->
+  		<bean id="myds1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+  			<property name="driverClassName" value="org.hsqldb.jdbc.JDBCDriver"/>
+  			<property name="url" value="jdbc:hsqldb:hsql://localhost/mydb"/>
+  			<property name="username" value="SA"/>
+  			<property name="password" value="" />	
+  		</bean>
+  		
+  		<!--	B  Hero from Bollywood -->																		   
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="myds1"/>  <!-- object A is injected inside object B -->
+	</bean>
+  		
+  	
+  	<!-- C Director of an ACtion Movie-->
+  	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>  <!-- object B is injected inside object C -->
+  	
+  	<aop:aspectj-autoproxy />
+  	
+  	<context:component-scan base-package="com.sbi"/>
+  	
+    <tx:annotation-driven transaction-manager="txManager" />  <!-- @Transactional -->
+      
+      
+</beans>
